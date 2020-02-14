@@ -1,0 +1,10 @@
+<% @todo.task.name %>
+<br>
+
+<% @todos.each do |todo|%>
+<%= todo.user.email %>
+<% end %>
+<br>
+<br>
+<br>
+<%= link_to "Home", tasks_index_path, class:"btn btn-primary text-white" %>
